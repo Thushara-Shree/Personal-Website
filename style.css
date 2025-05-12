@@ -1,0 +1,197 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: url('website.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    transition: background 0.3s ease;
+  }
+  
+  /* Header */
+  header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid #1c73e8;
+    animation: fadeIn 1.5s ease-in;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav a {
+    color: #4e73df;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: rgba(22, 160, 133, 0.8);
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  /* Sections */
+  .section {
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2.5rem;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .section ul {
+    padding-left: 1.5rem;
+    list-style: disc;
+  }
+  
+  .section p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  /* Articles */
+  article {
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease;
+  }
+  
+  article h3 {
+    color: #e74c3c;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    transition: color 0.3s ease;
+  }
+  
+  article h3:hover {
+    color: #f39c12;
+  }
+  
+  /* Contact Section Links */
+  .contact a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .contact a:hover {
+    color: #e67e22;
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: rgba(44, 62, 80, 0.9);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    border-top: 4px solid #1abc9c;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-60px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .section {
+      padding: 1.5rem;
+    }
+  }
+  

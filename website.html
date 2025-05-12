@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thushara Shree | Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll('nav a');
+      for (const link of links) {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const id = link.getAttribute('href').substring(1);
+          document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Thushara Shree C H</h1>
+    <p>Aspiring Web Developer | Writer | Freelancer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#blogs">Blogs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Welcome to My Creative Space</h2>
+    <p>Turning ideas into clean, functional websites.</p>
+  </div>
+
+  <div class="container">
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Thushara Shree, an aspiring web developer with a background in writing and SEO-optimized blog creation. 
+        I have experience in HTML, CSS, and JavaScript and am currently learning React and NodeJS. Additionally, I am proficient in Java and hold a certification in Robotic Process Automation (RPA). 
+        I'm passionate about building interactive and user-friendly websites, blending creativity with functionality, especially through frontend technologies.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Book App</strong> (in progress): A web application that fetches book data using an API with homepage and feature sections.</li>
+        <li><strong>Waste Management using IoT and Machine Learning</strong>: A final year project that integrates IoT and machine learning for efficient waste management solutions.</li>
+        <li><strong>Student Management System using SQL</strong>: A project built as part of DBMS, focusing on managing student data efficiently using SQL databases.</li>
+      </ul>
+    </section>
+
+    <section id="blogs" class="section">
+      <h2>Blogs</h2>
+      <article>
+        <h3>Freelancing Journey</h3>
+        <p>
+          I’m venturing into freelancing, offering SEO-optimized content writing services. I specialize in blending creativity,
+          clarity, and keyword optimization to craft content that performs well in search engines and resonates with readers.
+        </p>
+      </article>
+
+      <article>
+        <h3>Learning to Code</h3>
+  <p>
+    My coding journey began with HTML and CSS, and now I'm diving into JavaScript. I love how code can turn an idea into 
+    something real and interactive—especially for the web. I am fluent in Java and have a certification in Robotic Process Automation (RPA). 
+    Currently, I am learning React and NodeJS, building upon my foundation to create modern, dynamic applications.
+  </p>
+      </article>
+
+      <article>
+        <h3>My Hobbies</h3>
+  <p>
+    When I’m not coding or writing, I enjoy reading, learning new skills, and exploring the world of tech. 
+    I’m also a fan of blogging about productivity and personal growth. Additionally, my poem "Heal" has been published in a book, 
+    and I am a state-level yoga player, which helps me maintain balance and focus in my personal and professional life.
+  </p>
+      </article>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:thusharashee2003@gmail.com">thusharashee2003@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/thushara-shree-c-h-051831225" target="_blank">Thushara Shree</a></p>
+      <p>GitHub: <a href="https://github.com/Thushara-Shree" target="_blank">Thushara-Shree</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Thushara Shree. All rights reserved.</p>
+  </footer>
+</body>
+</html>
